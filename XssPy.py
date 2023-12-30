@@ -90,8 +90,8 @@ def testPayload(payload, p, link):
 def initializeAndFind():
 
     if not results.url:    # if the url has been passed or not
-        color.log(logging.INFO, color.GREEN, 'Url not provided correctly')
-        return []
+        color.log(logging.INFO, color.GREEN, 'Url not provided correctly, please input your url')
+        url = input("enter url")
 
     firstDomains = []    # list of domains
     allURLS = []
